@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Twitcher</title>
+
+	<script src="vendor/jquery.min.js"></script>
+  <script>
+	  jQuery(document).keydown(function(event) {
+	  	if (event.which == 123) {
+  			require('nw.gui').Window.get().showDevTools();
+	  	}
+	  });
+  </script>
+</head>
+<body>
+	<h1>Hello World!</h1>  
+</body>
+</html>
