@@ -5,11 +5,18 @@
 	<script src="vendor/jquery.min.js"></script>
   <script>
 	  jQuery(document).keydown(function(event) {
+	  	// Reload page when pressed F5
+	  	if (event.which == 116) {
+	  		location.reload();
+	  	}
+
+	  	// Open devtools when pressed F12
 	  	if (event.which == 123) {
   			require('nw.gui').Window.get().showDevTools();
 	  	}
 	  });
   </script>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<h1>Hello World!</h1>  
